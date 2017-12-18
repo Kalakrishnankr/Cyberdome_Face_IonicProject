@@ -1,0 +1,79 @@
+<!--
+Generated template for the UploadDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+  -->
+  <ion-header>
+
+  <ion-navbar>
+  <ion-title>Upload Details</ion-title>
+  </ion-navbar>
+
+  </ion-header>
+
+
+  <ion-content class= "home-background">
+
+
+
+  <div class="login-box">
+  <form  name="registerForm" #registerForm="ngForm">
+  <ion-row>
+  <ion-col>
+  <ion-list inset>
+  <!--  <ion-item> -->
+
+  <ion-row  class="profile" *ngIf="base64Image!=null">
+  <img [src]="base64Image" style="width:180px;height:220px" />
+
+  </ion-row>
+  <ion-row class="icon_row">
+  <ion-col class="camera_icon">
+  <img src="assets/images/camera.png" style="width:30px;height:30px" (click)="takePicture()">
+  </ion-col>
+  <ion-col  >
+  <img src="assets/images/uploadpicture.png" style="width:30px;height:30px" (click)="openGallery()" >
+  </ion-col>
+  </ion-row>
+
+  <!-- <button (click)="takePicture()" ion-button  >Take Picture</button>
+  <img [src]="base64Image"/>    
+  <ion-icon name="images" on-tap="openGallery()"></ion-icon>-->
+  <!--  </ion-item> -->
+
+  <ion-item>
+  <ion-input type="text" placeholder="Name" name="user_name" [(ngModel)]="userDataList.user_name"  required></ion-input>
+  </ion-item>
+
+  <ion-item>
+  <ion-input type="text" placeholder="Age" name="user_age"  [(ngModel)]="userDataList.user_age" required></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-input type="text" placeholder="Address" name="user_address"  [(ngModel)]="userDataList.user_address" required></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-input type="text" placeholder="Crime Details" name="user_crime_details"  [(ngModel)]="userDataList.user_crime_details" required></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-input type="text" placeholder="Personal Identification" name="user_identify"  [(ngModel)]="userDataList.user_identify" required></ion-input>
+  </ion-item>
+
+  </ion-list>
+  </ion-col>
+  </ion-row>
+
+
+
+  </form>
+  <ion-row>
+  <ion-col class="signup-col">
+  <button ion-button class="submit-btn" full type="submit" (click)="submit()" [disabled]="!registerForm.form.valid">OK</button>
+  </ion-col>
+
+  <ion-col class="signup-col">
+  <button ion-button class="submit-btn" full  (click)="cancel()" >CANCEL</button>
+  </ion-col>
+  </ion-row>
+  </div>
+  </ion-content>

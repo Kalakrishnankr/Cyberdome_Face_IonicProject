@@ -1,4 +1,4 @@
-page-home {
+page-upload-details {
 	.home-background{
 		width: 100%;
 		height: 100%;
@@ -7,22 +7,21 @@ page-home {
 	    -webkit-background-size: cover;
         -moz-background-size: cover;
 	}
-
-	.box{
-		padding: 20%;
-		/*border: solid #ff0000;*/
-		margin-top: 41%;
-		
+	.profile{
+		width: 200px;
+    	height: 230px;
+   		left: 0;
+    	right: 0;
+		margin: auto;
 	}
-.item-ios.item-block .item-inner{
-}
-.item-ios .item-button{
-	height: 45px;
-	width: 200px;
-}
-	.item-button{
+	.icon_row{
 
-		height: 45px;
-		width: 150px;
 	}
+	.camera_icon{
+		text-align: end;
+
+	}
+	/*.item-ios {
+		background-color: none;
+	}*/
 }

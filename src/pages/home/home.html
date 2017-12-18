@@ -1,14 +1,19 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Home Page
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="home-background">
+	<ion-grid class="box">
+			<button  (click)="identify()" ion-button>IDENTIFY PERSON</button>
+	        <button  (click)="upload()" ion-button>UPLOAD DETAILS</button>
+
+	        <button  (click)="read()" ion-button>READ TEXT PAGE</button>
+
+		
+	</ion-grid>
+  
 </ion-content>
